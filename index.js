@@ -8,7 +8,7 @@ let closed = false;
 let det, d;
 let msg;
 let py, sh;
-const con = readFileSync("./test.html", {
+const con = readFileSync("test.html", {
   encoding: "utf8",
   flag: "r",
 });
