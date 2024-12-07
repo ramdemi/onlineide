@@ -8,10 +8,10 @@ let closed = false;
 let det, d;
 let msg;
 let py, sh;
-const con = readFileSync('./test.html', {
+/* const con = readFileSync('./test.html', {
   encoding: "utf8",
   flag: "r",
-});
+});*/
 const httpServer = createServer((req, res) => {
   if (req.url !== "/") {
     res.writeHead(404);
@@ -19,7 +19,7 @@ const httpServer = createServer((req, res) => {
     return;
   }
   // reload the file every time
-  const content = con;
+  const content = req.url;
 
   //const length = 3;
   const length = Buffer.byteLength(content);
