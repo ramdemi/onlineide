@@ -170,3 +170,5 @@ io.on("connection", (socket) => {
 
 httpServer.listen(3000);
 
+module.exports index
+
